@@ -1,9 +1,9 @@
 boxes:
-  centos-65-x86_64-nocm: "centos-65-x86_64-nocm"
+  puppetlabs/centos-6.5-64-nocm: "puppetlabs/centos-6.5-64-nocm"
 nodes:
   xmaster:
     hostname: master.vagrant.vm
-    box: centos-65-x86_64-nocm
+    box: puppetlabs/centos-6.5-64-nocm
     memory: 1024
     cpus: 1
     networks:
@@ -18,7 +18,7 @@ nodes:
           path: puppet/provision.sh
   gitlab:
     hostname: gitlab.vagrant.vm
-    box: centos-65-x86_64-nocm
+    box: puppetlabs/centos-6.5-64-nocm
     memory: 1024
     cpus: 1
     networks:
@@ -32,7 +32,7 @@ nodes:
           master: 'master.vagrant.vm'
   venus:
     hostname: venus.vagrant.vm
-    box: centos-65-x86_64-nocm
+    box: puppetlabs/centos-6.5-64-nocm
     memory: 512
     cpus: 1
     networks:
@@ -46,7 +46,7 @@ nodes:
           master: 'master.vagrant.vm'
   pluto:
     hostname: pluto.vagrant.vm
-    box: centos-65-x86_64-nocm
+    box: puppetlabs/centos-6.5-64-nocm
     memory: 512
     cpus: 1
     networks:
@@ -60,7 +60,7 @@ nodes:
           master: 'master.vagrant.vm'
   xagent:
     hostname: xagent.vagrant.vm
-    box: centos-65-x86_64-nocm
+    box: puppetlabs/centos-6.5-64-nocm
     memory: 512
     cpus: 1
     networks:
