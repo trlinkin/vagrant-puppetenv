@@ -12,6 +12,7 @@ Icon?
 
 # Vagrant
 .vagrant
+.pe_build
 
 install_log*
 puppet-enterprise-*
